@@ -59,8 +59,12 @@ body {
 }
 
 .game{
-    margin-bottom: 32px;
-    margin-left: 32px;
+    display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 32px;
+        margin-bottom: 128px;
+    
 
     &_block{
         color: #FFFFFF;
@@ -82,11 +86,11 @@ body {
     }
     
     &_select{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 32px;
-        margin-bottom: 128px;
+        margin-bottom: 32px;
+        margin-left: 32px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
     }
 }
 
