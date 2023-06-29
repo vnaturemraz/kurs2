@@ -9,6 +9,7 @@ html {
   background-image: url(img/fon.jpg);
   background-repeat: no-repeat;
   background-position: center center;
+  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -24,7 +25,6 @@ body {
 .header_text {
   font-weight: 700;
   font-size: 64px;
-  line-height: 78px;
   color: #FFFFFF;
   width: 750px;
   margin-top: 217px;
@@ -81,4 +81,45 @@ body {
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  html {
+    background-image: url(img/fon_mobile.jpg);
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header_text {
+    font-size: 32px;
+    width: 340px;
+    text-align: center;
+  }
+  .header_subtitle {
+    font-size: 14px;
+    width: 340px;
+    text-align: center;
+    line-height: 22px;
+  }
+  .header_button {
+    margin-bottom: 370px;
+  }
+  .game {
+    gap: 7px;
+  }
+  .game_select {
+    font-size: 20px;
+    margin-bottom: 52px;
+    margin-left: 22px;
+  }
+  .game_block {
+    background-size: 343px;
+    background-repeat: no-repeat;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -8,7 +8,7 @@ html{
     background-image: url(img/fon.jpg);
     background-repeat: no-repeat;
     background-position: center center;
-    
+    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -16,6 +16,7 @@ html{
 }
 body {
     font-family: "Montserrat", sans-serif;
+    
 }
 
 .center {
@@ -27,7 +28,6 @@ body {
     &_text{
         font-weight: 700;
         font-size: 64px;
-        line-height: 78px;
         color: #FFFFFF;
         width: 750px;
         margin-top: 217px;
@@ -94,4 +94,4 @@ body {
     }
 }
 
-
+@import "mobile"; 
