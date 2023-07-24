@@ -66,13 +66,14 @@ body {
   margin-bottom: 128px;
 }
 .game_block {
-  color: #FFFFFF;
+  color: hsl(0, 0%, 100%);
   width: 378px;
   height: 300px;
   display: flex;
   align-items: flex-end;
 }
 .game_img {
+  width: 100%;
   transition: 0.5s;
 }
 .game_img:hover {
@@ -105,8 +106,8 @@ body {
   line-height: 32px;
 }
 .seasons_img {
-  width: 485px;
-  height: 333px;
+  width: 100%;
+  height: auto;
 }
 .seasons_button {
   background: #9C0332;
@@ -163,7 +164,19 @@ body {
     margin-left: 22px;
   }
   .game_block {
+    width: 100%;
     background-size: 343px;
     background-repeat: no-repeat;
+  }
+  .seasons {
+    text-align: center;
+    height: 400px;
+  }
+  .seasons_text {
+    font-size: 32px;
+  }
+  .seasons_p {
+    font-size: 14px;
+    line-height: 22px;
   }
 }/*# sourceMappingURL=style.css.map */

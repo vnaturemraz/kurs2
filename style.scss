@@ -73,7 +73,7 @@ body {
     
 
     &_block{
-        color: #FFFFFF;
+        color: hsl(0, 0%, 100%);
         width: 378px;
         height: 300px;
         display: flex;
@@ -82,6 +82,7 @@ body {
     }
     
     &_img{
+        width: 100%;
         transition: 0.5s;
         &:hover{
             transform: scale(1.05);
@@ -118,8 +119,8 @@ body {
     }
 
     &_img{
-        width :485px;
-        height: 333px
+        width :100%;
+        height: auto;
     }
 
     &_button{

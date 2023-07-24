@@ -43,8 +43,22 @@
         }
 
         &_block{
+            width: 100%;
             background-size: 343px;
             background-repeat: no-repeat;
+        }
+    }
+
+    .seasons{
+        text-align: center;
+        height: 400px;
+        &_text{
+            font-size: 32px;
+        }
+
+        &_p{
+            font-size: 14px;
+            line-height: 22px;
         }
     }
 }
