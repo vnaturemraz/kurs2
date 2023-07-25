@@ -34,8 +34,7 @@
     }
 
     .game{
-        gap: 7px;
-        
+
         &_select{
             font-size: 20px;
             margin-bottom: 52px;
@@ -51,7 +50,7 @@
 
     .seasons{
         text-align: center;
-        height: 400px;
+        margin-bottom: 200px;
         &_text{
             font-size: 32px;
         }
@@ -59,6 +58,22 @@
         &_p{
             font-size: 14px;
             line-height: 22px;
+            width: 340px;
+        }
+
+        &_block{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .words{
+        flex-direction: column-reverse;
+        align-items: center;
+        &_block{
+            width: 340px;
+            text-align: center;
         }
     }
 }

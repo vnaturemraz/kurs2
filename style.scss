@@ -74,11 +74,9 @@ body {
 
     &_block{
         color: hsl(0, 0%, 100%);
-        width: 378px;
-        height: 300px;
         display: flex;
         align-items: flex-end;
-        
+        width: 378px;
     }
     
     &_img{
@@ -99,7 +97,10 @@ body {
     flex-direction: row;
     gap: 100px;
     align-items: center;
-    height: 800px;
+    justify-content: center;
+    margin-top: 400px;
+    margin-bottom: 400px;
+
     &_block{
         width: 595px;
     }
@@ -116,6 +117,7 @@ body {
         font-size: 18px;
         color: #FFFFFF;
         line-height: 32px;
+        width: 580px;
     }
 
     &_img{
@@ -141,6 +143,17 @@ body {
             border-radius: 1px;
         }
 
+    }
+}
+
+.words{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-top: 200px;
+    &_img{
+        width :100%;
+        height: auto;
     }
 }
 
