@@ -55,6 +55,12 @@ body {
         line-height: 22px;
         margin-top: 44px;
         margin-bottom: 493px;
+        transition: 0.5s;
+        &:hover{
+            transform: scale(1.05);
+            border-color: black;
+            border-radius: 1px;
+        }
     }
 }
 
@@ -67,30 +73,74 @@ body {
     
 
     &_block{
-        color: #FFFFFF;
+        color: hsl(0, 0%, 100%);
         width: 378px;
         height: 300px;
         display: flex;
         align-items: flex-end;
-    }
-    &_block_1{
-        background-image: url(img/game1.png);
-    }
-
-    &_block_2{
-        background-image: url(img/game2.png);
-    }
-
-    &_block_3{
-        background-image: url(img/game3.png);
+        
     }
     
-    &_select{
-        margin-bottom: 32px;
-        margin-left: 32px;
-        font-weight: 600;
-        font-size: 24px;
+    &_img{
+        width: 100%;
+        transition: 0.5s;
+        &:hover{
+            transform: scale(1.05);
+            border: 3px solid #44D2FF; 
+            border-radius: 16px;
+        }
+    }
+    
+}
+
+.seasons{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 100px;
+    align-items: center;
+    height: 800px;
+    &_block{
+        width: 595px;
+    }
+
+    &_text{
+        font-weight: 700;
+        font-size: 48px;
+        color: #FFFFFF;
+        margin-bottom: 25px;
+    }
+
+    &_p{
+        font-weight: 300;
+        font-size: 18px;
+        color: #FFFFFF;
         line-height: 32px;
+    }
+
+    &_img{
+        width :100%;
+        height: auto;
+    }
+
+    &_button{
+        background: #9C0332;
+        border-radius: 30px;
+        color: white;
+        width: 234.06px;
+        height: 48.6px;
+        border: 0px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        margin-top: 32px;
+        transition: 0.5s;
+        &:hover{
+            transform: scale(1.05);
+            border-color: black;
+            border-radius: 1px;
+        }
+
     }
 }
 

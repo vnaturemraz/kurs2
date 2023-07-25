@@ -50,6 +50,12 @@ body {
   line-height: 22px;
   margin-top: 44px;
   margin-bottom: 493px;
+  transition: 0.5s;
+}
+.header_button:hover {
+  transform: scale(1.05);
+  border-color: black;
+  border-radius: 1px;
 }
 
 .game {
@@ -60,27 +66,66 @@ body {
   margin-bottom: 128px;
 }
 .game_block {
-  color: #FFFFFF;
+  color: hsl(0, 0%, 100%);
   width: 378px;
   height: 300px;
   display: flex;
   align-items: flex-end;
 }
-.game_block_1 {
-  background-image: url(img/game1.png);
+.game_img {
+  width: 100%;
+  transition: 0.5s;
 }
-.game_block_2 {
-  background-image: url(img/game2.png);
+.game_img:hover {
+  transform: scale(1.05);
+  border: 3px solid #44D2FF;
+  border-radius: 16px;
 }
-.game_block_3 {
-  background-image: url(img/game3.png);
+
+.seasons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 100px;
+  align-items: center;
+  height: 800px;
 }
-.game_select {
-  margin-bottom: 32px;
-  margin-left: 32px;
-  font-weight: 600;
-  font-size: 24px;
+.seasons_block {
+  width: 595px;
+}
+.seasons_text {
+  font-weight: 700;
+  font-size: 48px;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+}
+.seasons_p {
+  font-weight: 300;
+  font-size: 18px;
+  color: #FFFFFF;
   line-height: 32px;
+}
+.seasons_img {
+  width: 100%;
+  height: auto;
+}
+.seasons_button {
+  background: #9C0332;
+  border-radius: 30px;
+  color: white;
+  width: 234.06px;
+  height: 48.6px;
+  border: 0px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 32px;
+  transition: 0.5s;
+}
+.seasons_button:hover {
+  transform: scale(1.05);
+  border-color: black;
+  border-radius: 1px;
 }
 
 @media (max-width: 767px) {
@@ -119,7 +164,19 @@ body {
     margin-left: 22px;
   }
   .game_block {
+    width: 100%;
     background-size: 343px;
     background-repeat: no-repeat;
+  }
+  .seasons {
+    text-align: center;
+    height: 400px;
+  }
+  .seasons_text {
+    font-size: 32px;
+  }
+  .seasons_p {
+    font-size: 14px;
+    line-height: 22px;
   }
 }/*# sourceMappingURL=style.css.map */

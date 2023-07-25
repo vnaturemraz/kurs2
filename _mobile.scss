@@ -11,7 +11,7 @@
     .header{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center;    
         &_text{
             font-size: 32px;
             width: 340px;
@@ -43,8 +43,22 @@
         }
 
         &_block{
+            width: 100%;
             background-size: 343px;
             background-repeat: no-repeat;
+        }
+    }
+
+    .seasons{
+        text-align: center;
+        height: 400px;
+        &_text{
+            font-size: 32px;
+        }
+
+        &_p{
+            font-size: 14px;
+            line-height: 22px;
         }
     }
 }
