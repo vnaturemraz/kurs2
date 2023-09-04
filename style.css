@@ -67,10 +67,9 @@ body {
 }
 .game_block {
   color: hsl(0, 0%, 100%);
-  width: 378px;
-  height: 300px;
   display: flex;
   align-items: flex-end;
+  width: 378px;
 }
 .game_img {
   width: 100%;
@@ -88,7 +87,9 @@ body {
   flex-direction: row;
   gap: 100px;
   align-items: center;
-  height: 800px;
+  justify-content: center;
+  margin-top: 400px;
+  margin-bottom: 400px;
 }
 .seasons_block {
   width: 595px;
@@ -104,6 +105,7 @@ body {
   font-size: 18px;
   color: #FFFFFF;
   line-height: 32px;
+  width: 580px;
 }
 .seasons_img {
   width: 100%;
@@ -126,6 +128,17 @@ body {
   transform: scale(1.05);
   border-color: black;
   border-radius: 1px;
+}
+
+.words {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  margin-top: 200px;
+}
+.words_img {
+  width: 100%;
+  height: auto;
 }
 
 @media (max-width: 767px) {
@@ -155,9 +168,6 @@ body {
   .header_button {
     margin-bottom: 370px;
   }
-  .game {
-    gap: 7px;
-  }
   .game_select {
     font-size: 20px;
     margin-bottom: 52px;
@@ -170,7 +180,7 @@ body {
   }
   .seasons {
     text-align: center;
-    height: 400px;
+    margin-bottom: 200px;
   }
   .seasons_text {
     font-size: 32px;
@@ -178,5 +188,19 @@ body {
   .seasons_p {
     font-size: 14px;
     line-height: 22px;
+    width: 340px;
+  }
+  .seasons_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .words {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .words_block {
+    width: 340px;
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
