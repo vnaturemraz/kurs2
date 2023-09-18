@@ -15,7 +15,6 @@
 //     a % 2 == 0 ? alert('Число четное') : alert ('Число нечетное');
 // }
 
-// console.log(resultChet(2));
 
 // 3.1 задание 
 // let square = (a) => a**2;
@@ -29,7 +28,7 @@
 
 // 4 задание
 // let answerAge = function () {
-//     age = prompt ('сколько вам лет?');
+//     let age = prompt ('сколько вам лет?');
     
 //     if (age > 0 & age <= 12){
 //         alert('Привет, друг!');

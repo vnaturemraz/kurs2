@@ -1,24 +1,22 @@
 
 let seasonsGame = function(a){
     if (a==12 || a==1 || a==2){
-        console.log('Зима');
+        alert('Зима');
     }
 
     else if (a>3 & a<=5){
-        console.log('Весна');
+        alert('Весна');
     }
 
     else if (a>5 & a<=8){
-        console.log('Лето');
+        alert('Лето');
     }
 
     else if (a>8 & a<=11){
-        console.log('Осень');
+        alert('Осень');
     }
 
     else{
-        console.log('вы что то не то ввели');
+        alert('вы что то не то ввели');
     }
 }
-
-seasonsGame(5);
