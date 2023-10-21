@@ -76,4 +76,19 @@
             text-align: center;
         }
     }
+
+    .mystery{
+        margin-top: 200px;
+        &_text{
+            font-size: 32px;
+        }
+        &_p{
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+
+    .footer{
+        border-top: 0px;
+    }
 }
