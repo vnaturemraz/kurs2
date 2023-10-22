@@ -1,103 +1,115 @@
 // 1 задание
-// let min = (a, b) => {
-//     if (a < b) {
-//         return a;
-//     }
-//     else {
-//         return b;
-//     }
-// }
+// const arr = [1, 5, 4, 10, 0, 3];
 
-// console.log (min(3, 10));
+// for (const item of arr) {
+//     if (item === 10) {
+//         console.log(item);
+//         break;
+//     }
+//     console.log(item);
+// }
 
 // 2 задание
-// let resultChet = function (a) {
-//     a % 2 == 0 ? alert('Число четное') : alert ('Число нечетное');
-// }
+// const arr = [1, 5, 4, 10, 0, 3];
+// let arrSearch = arr.indexOf(4);
+// console.log(arrSearch);
 
+// 3 задание
 
-// 3.1 задание 
-// let square = (a) => a**2;
-// console.log(square(4));
-
-// 3.2 задание 
-// let square = (a) => {
-// 	let result = a**2;
-// 	return result; 
-// }
+// const arr = [1, 3, 5, 10, 20];
+// console.log(arr.join(' '));
 
 // 4 задание
-// let answerAge = function () {
-//     let age = prompt ('сколько вам лет?');
-    
-//     if (age > 0 & age <= 12){
-//         alert('Привет, друг!');
-//     }
 
-//     else if (age > 12){
-//         alert('Добро пожаловать!');
-//     }
-
-//     else{
-//         alert('Вы ввели неправильное значение');
+// let arr =[];
+// for (let i=0; i < 3; i++){
+//     arr[i] = [];
+//     for (let j = 0; j < 3; j++){
+//         arr[i].push(1);
 //     }
 // }
+// console.log(arr);
 
-// answerAge();
+// 5 задание 
 
-// 5 задание
-// let numberOrNot = function (a, b) {
-//     if (!isNaN(a) & !isNaN(b)) {
-//         let result = a*b
-//         return result;
-//     }
+// let arr = [1, 1, 1];
 
-//     else{
-//         let result = ('Одно или оба значения не являются числом');
-//         return result;
-//     }
+// for ( let i = 0; i < 3; i++){
+//     arr.push(2);
 // }
 
-// console.log(numberOrNot('sdfs',5));
+// console.log(arr);
 
 // 6 задание
-// let numberOrNot = function (a) {
-//     if (!isNaN(a)) {
-//         let result = a**3
-//         return ( `n в кубе равняется ${result}`);
-//     }
+// const arr = [9, 8, 7, 'a', 6, 5];
+// arr.sort();
+// arr.pop();
+// console.log(arr);
 
-//     else{
-//         let result = ('Переданный параметр не является числом');
-//         return result;
-//     }
+//7 задание
+// const arr = [9, 8, 7, 6, 5];
+// if (arr.includes(Number(prompt(`Угадай число`)))) {
+
+//     alert(`Угадал`)
+
+// } else {
+
+//     alert(`Не угадал`)
+
 // }
 
-// console.log(numberOrNot('AFA'));
+//8 задание
 
-// 7 задание
-// let circle1 = {
-//     radius: 10,
-//     getArea() {
-//         let s = Math.PI * this.radius**2;
-//         return s;
-//     },
-//     getPerimeter() {
-//         let p = 2 * Math.PI * this.radius;
-//         return p;
-//     }
+// let a = 'abcdef';
+// let aMass = Array.from(a);
+// aMass.reverse();
+// console.log(aMass.join(''));
+
+//9 задание
+
+// let arr = [[1, 2, 3,],[4, 5, 6]];
+// console.log(arr.flat());
+
+//10 задание
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let sum = 0
+// for ( let i = 0; i < (arr.length-1); i++){
+//     sum = arr[i] + arr[i+1];
+//     console.log(sum);
 // }
 
-// let circle2 = {
-//     radius: 15,
-//     getArea() {
-//         let s = Math.PI * this.radius**2;
-//         return s;
-//     },
-//     getPerimeter() {
-//         let p = 2 * Math.PI * this.radius;
-//         return p;
-//     }
+//11 задание
+// let arr = [1, 3, 5, 7]
+// let quad = function (){
+//     let result = arr.map(item => (item**2));
+//     console.log(result)
 // }
 
-// console.log(circle1.getPerimeter())
+// quad(arr);
+
+//12 задание
+
+// const arr12 = ["слово", "", "слог", "длинное предложение", "буква"];
+
+// const getLengthWords = function (arr) {
+//   let lengthArr = arr.map(el => el.length);
+//   return lengthArr;
+// };
+
+// console.log(getLengthWords(arr12));
+
+//13 задание
+
+// const arr = [-25, 25, 0, -1000, -2];
+// const arrNeg = []
+// const filterPositive = function () {
+//     for (i=0; i < arr.length; i++){
+//         if (arr[i]<0){
+//             arrNeg.push(arr[i]);
+//         }
+//     }
+//     console.log(arrNeg)
+// }
+
+// filterPositive(arr)
