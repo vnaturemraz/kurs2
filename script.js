@@ -1,115 +1,78 @@
 // 1 задание
-// const arr = [1, 5, 4, 10, 0, 3];
+// let str = 'asfdafaq';
 
-// for (const item of arr) {
-//     if (item === 10) {
-//         console.log(item);
-//         break;
-//     }
-//     console.log(item);
-// }
+// str = str.toUpperCase();
+// console.log (str);
 
 // 2 задание
-// const arr = [1, 5, 4, 10, 0, 3];
-// let arrSearch = arr.indexOf(4);
-// console.log(arrSearch);
+// let newStr = [];
+// let searchStart = function (strmas, str){
+//     for (i = 0; i < strmas.length; i++){
+//         if (strmas[i].toLowerCase().startsWith(str.toLowerCase())){
+//             newStr.push(strmas[i]);
+//         }
+//     };
+//     console.log(newStr);
+// }
+
+// searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру');
 
 // 3 задание
-
-// const arr = [1, 3, 5, 10, 20];
-// console.log(arr.join(' '));
+// let arr = 32.58884;
+// console.log(Math.floor(arr));
+// console.log(Math.ceil(arr));
+// console.log(Math.round(arr));
 
 // 4 задание
+// arr = [];
+// console.log(Math.min(52, 53, 49, 77, 21, 32));
+// console.log(Math.max(52, 53, 49, 77, 21, 32));
 
-// let arr =[];
-// for (let i=0; i < 3; i++){
-//     arr[i] = [];
-//     for (let j = 0; j < 3; j++){
-//         arr[i].push(1);
-//     }
+// 5 задание
+// function getRandomInt(minValue, maxValue) { 
+ 
+// return Math.round (Math.random() * (maxValue- minValue)) + minValue;
 // }
-// console.log(arr);
-
-// 5 задание 
-
-// let arr = [1, 1, 1];
-
-// for ( let i = 0; i < 3; i++){
-//     arr.push(2);
-// }
-
-// console.log(arr);
+// console.log(getRandomInt(1, 10));
 
 // 6 задание
-// const arr = [9, 8, 7, 'a', 6, 5];
-// arr.sort();
-// arr.pop();
-// console.log(arr);
+// let arrMas = [];
+//  function getRandomArrNumbers (arr){
+//     for (i=0; i<(Math.floor(arr/2)); i++){
+//         arrMas.push(Math.round (Math.random() * arr));
+        
+//     }
+//     return arrMas;
+//  }
+//  console.log(getRandomArrNumbers(12))
 
-//7 задание
-// const arr = [9, 8, 7, 6, 5];
-// if (arr.includes(Number(prompt(`Угадай число`)))) {
-
-//     alert(`Угадал`)
-
-// } else {
-
-//     alert(`Не угадал`)
-
+// 7 задание
+// function getRandomArrNumbers (minValue, maxValue){
+//     return Math.round (Math.random() * (maxValue- minValue)) + minValue;
 // }
+
+// console.log(getRandomArrNumbers(45, 50));
 
 //8 задание
 
-// let a = 'abcdef';
-// let aMass = Array.from(a);
-// aMass.reverse();
-// console.log(aMass.join(''));
+// let currentDate = new Date();
+// console.log(currentDate);
 
 //9 задание
-
-// let arr = [[1, 2, 3,],[4, 5, 6]];
-// console.log(arr.flat());
+// let currentDate = new Date();
+// let days73 = 73 * 24 * 60 * 60 * 1000;
+// let searchDate = +currentDate + days73;
+// let dayAfter73 = new Date (searchDate);
+// console.log(dayAfter73);
 
 //10 задание
+// const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+// const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
+// "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+// let myDate = new Date();
 
-// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-// let sum = 0
-// for ( let i = 0; i < (arr.length-1); i++){
-//     sum = arr[i] + arr[i+1];
-//     console.log(sum);
-// }
+// let fullDate = "Дата: " + myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + " - это " + days[myDate.getDay()]; 
+// let fullTime = "Время: " + myDate.getHours() + ":" + myDate.getMinutes() + ":" + myDate.getSeconds();
 
-//11 задание
-// let arr = [1, 3, 5, 7]
-// let quad = function (){
-//     let result = arr.map(item => (item**2));
-//     console.log(result)
-// }
-
-// quad(arr);
-
-//12 задание
-
-// const arr12 = ["слово", "", "слог", "длинное предложение", "буква"];
-
-// const getLengthWords = function (arr) {
-//   let lengthArr = arr.map(el => el.length);
-//   return lengthArr;
-// };
-
-// console.log(getLengthWords(arr12));
-
-//13 задание
-
-// const arr = [-25, 25, 0, -1000, -2];
-// const arrNeg = []
-// const filterPositive = function () {
-//     for (i=0; i < arr.length; i++){
-//         if (arr[i]<0){
-//             arrNeg.push(arr[i]);
-//         }
-//     }
-//     console.log(arrNeg)
-// }
-
-// filterPositive(arr)
+// console.log(fullDate);
+// console.log(fullTime);
