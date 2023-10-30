@@ -1,78 +1,97 @@
 // 1 задание
-// let str = 'asfdafaq';
+// const people = [
+//     { name: 'Глеб', age: 29 },
+//     { name: 'Анна', age: 17 },
+//     { name: 'Олег', age: 7 },
+//     { name: 'Оксана', age: 47 }
+//  ];
+ 
+//  console.log(people.sort (function (a,b){
+    
+//     if (a.age > b.age){
+//         return 1;
+//     }
 
-// str = str.toUpperCase();
-// console.log (str);
+//     if (a.age < b.age){
+//         return -1;
+//     }
 
-// 2 задание
-// let newStr = [];
-// let searchStart = function (strmas, str){
-//     for (i = 0; i < strmas.length; i++){
-//         if (strmas[i].toLowerCase().startsWith(str.toLowerCase())){
-//             newStr.push(strmas[i]);
-//         }
-//     };
-//     console.log(newStr);
+//     return 0;
+//  }))
+
+// 2 задание 
+
+// function isPositive(number) {
+//     return (number > 0);
 // }
 
-// searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру');
+// function isMale(item) {
+//     return item.gender === 'male';
+// }
 
-// 3 задание
-// let arr = 32.58884;
-// console.log(Math.floor(arr));
-// console.log(Math.ceil(arr));
-// console.log(Math.round(arr));
+// function filter(arr, ruleFunction) {
+//     const output = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         if (ruleFunction(arr[i])) {
+//             output.push(arr[i]);
+//         }
+//     }
+//     return output;
+// }
+
+// console.log(filter([3, -4, 1, 9], isPositive)); // Должен выводить [3, 1, 9]
+
+// const people = [
+//    {name: 'Глеб', gender: 'male'},
+//    {name: 'Анна', gender: 'female'},
+//    {name: 'Олег', gender: 'male'},
+//    {name: 'Оксана', gender: 'female'}
+// ];
+
+// console.log(filter(people, isMale)); // Должен выводить [{name: 'Глеб', gender: 'male'},  {name: 'Олег', gender: 'male'}]
+
+//3 задание
+
+// const timer = () => {
+    
+//     const interval = setInterval(() => {
+//         let time = new Date ();
+//         console.log(time);
+//     }, 3000);
+
+//     setTimeout(() => {
+//         clearInterval(interval);
+//         console.log('30 секунд прошло')
+//     }, 30000 )
+// };
+
+// timer();
 
 // 4 задание
-// arr = [];
-// console.log(Math.min(52, 53, 49, 77, 21, 32));
-// console.log(Math.max(52, 53, 49, 77, 21, 32));
+
+// function delayForSecond(callback) {
+ 
+//   setTimeout(function(){
+//     callback()
+//   }, 1000)
+// }
+
+// delayForSecond(function () {
+//   console.log('Привет, Глеб!');
+// })
 
 // 5 задание
-// function getRandomInt(minValue, maxValue) { 
- 
-// return Math.round (Math.random() * (maxValue- minValue)) + minValue;
-// }
-// console.log(getRandomInt(1, 10));
 
-// 6 задание
-// let arrMas = [];
-//  function getRandomArrNumbers (arr){
-//     for (i=0; i<(Math.floor(arr/2)); i++){
-//         arrMas.push(Math.round (Math.random() * arr));
-        
-//     }
-//     return arrMas;
-//  }
-//  console.log(getRandomArrNumbers(12))
+// function delayForSecond(cb) {
+//     setTimeout(() => {
+//         console.log('Прошла одна секунда');
+// 				if(cb) { 	cb(); }
 
-// 7 задание
-// function getRandomArrNumbers (minValue, maxValue){
-//     return Math.round (Math.random() * (maxValue- minValue)) + minValue;
+//     }, 1000)
 // }
 
-// console.log(getRandomArrNumbers(45, 50));
+// function sayHi (name) {
+//     console.log(`Привет, ${name}!`);
+// }
 
-//8 задание
-
-// let currentDate = new Date();
-// console.log(currentDate);
-
-//9 задание
-// let currentDate = new Date();
-// let days73 = 73 * 24 * 60 * 60 * 1000;
-// let searchDate = +currentDate + days73;
-// let dayAfter73 = new Date (searchDate);
-// console.log(dayAfter73);
-
-//10 задание
-// const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
-// const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
-// "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
-// let myDate = new Date();
-
-// let fullDate = "Дата: " + myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + " - это " + days[myDate.getDay()]; 
-// let fullTime = "Время: " + myDate.getHours() + ":" + myDate.getMinutes() + ":" + myDate.getSeconds();
-
-// console.log(fullDate);
-// console.log(fullTime);
+// delayForSecond(() => sayHi('Глеб'))
