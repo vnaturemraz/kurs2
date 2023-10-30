@@ -20,3 +20,24 @@ let seasonsGame = function(a){
         alert('вы что то не то ввели');
     }
 }
+
+let wordsGame = function (){
+    let words = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    words = words.sort(() => Math.random() - 0.5);
+    alert (words);
+    let answer1 = prompt ("Чему равнялся первый элемент массива?");
+    let answer2 = prompt ("Чему равнялся последний элемент массива?");
+
+    if ((words[0].toLowerCase() === answer1.toLowerCase()) && (words[6].toLowerCase() === answer2.toLowerCase() )){
+        alert ("Поздравляю, ты угадал!");
+    }
+
+    else if ((words[0].toLowerCase() === answer1.toLowerCase()) || (words[6].toLowerCase() === answer2.toLowerCase() )){
+        alert ("Вы были близки к победе!");
+    }
+
+    else{
+        alert ("Вы ответили неверно :(");
+    }
+}
+
